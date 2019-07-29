@@ -6,7 +6,13 @@
   </head>
 
   <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam;">
+        <a-scene
+            embedded
+            arjs="patternRatio: 0.66; sourceType: webcam; debugUIEnabled: false;"
+            vr-mode-ui="enabled: false"
+            renderer="colorManagement: true;"
+            loading-screen="dotsColor: white; backgroundColor: black"
+            >
         <a-assets>
             <a-asset-item id="headrest" src="https://nomad-project.co.uk/objects/collection/headrest/_headrest/headrest.gltf"></a-asset-item>
         </a-assets>
